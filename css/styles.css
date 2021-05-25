@@ -19,8 +19,8 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  margin: 0;
 }
 
 ul,
@@ -308,6 +308,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--subtitle-color);
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 /* ============footer============ */
@@ -449,9 +450,9 @@ a {
   fill: var(--subtitle-color);
 }
 
-.menu-link:hover .envelope,
-.menu-link:focus .envelope: {
-  fill: var(--accent-color);
+.mail-link:hover .envelope,
+.mail-link:focus .envelope {
+  fill: currentColor;
 }
 
 .smartphone {
@@ -461,5 +462,47 @@ a {
 }
 .contact-link:hover .smartphone,
 .contact-link:focus .smartphone {
-  fill: var(--accent-color);
+  fill: currentColor;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-left: auto;
+  /* margin: 0px 32px 30px 32px; */
+}
+
+.link-social li {
+  border-radius: 50%;
+}
+.link-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background-color: transparent;
+}
+
+.link-social:hover,
+.link-social:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.social-links li:not(:last-child) {
+  margin-right: 10px;
 }
