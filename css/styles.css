@@ -172,6 +172,7 @@ a {
   color: var(--secondary-color);
   max-width: 696px;
   margin: 0 auto 30px;
+  text-transform: uppercase;
 }
 .hero-container {
   text-align: center;
@@ -179,12 +180,13 @@ a {
 
 .modal-button:hover,
 .modal-button:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 .modal-button {
   color: var(--secondary-color);
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 16px;
@@ -193,7 +195,9 @@ a {
   cursor: pointer;
   padding: 10px 32px;
   align-items: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   display: inline-block;
 }
 
@@ -269,6 +273,9 @@ a {
 .work-item {
   width: 270px;
   background-color: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -387,6 +394,10 @@ a {
   margin-bottom: -30px;
 }
 
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .port-items {
   margin-right: 30px;
 
@@ -481,6 +492,11 @@ a {
   margin-bottom: 30px;
 }
 
+.icon-container:hover,
+.icon-container:focus {
+  fill: #2196f3;
+}
+
 .social-links {
   display: flex;
   align-items: center;
@@ -542,6 +558,7 @@ a {
 .icon-clients:hover,
 .icon-clients:focus {
   fill: #2196f3;
+  border-color: #2196f3;
 }
 
 .follow-title {
